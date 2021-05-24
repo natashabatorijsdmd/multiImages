@@ -14,7 +14,7 @@
 <div id="modal2" class="modal">
     <div class="modal-content">
         <h3>Add Images</h3>
-        <form action="/addPhoto" method="POST" enctype="multipart/form-data">
+        <form action="/addPhoto/{{doc._id}}" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field">
                 <div class="btn">
                     <span>IMG</span>
@@ -49,7 +49,7 @@
     <hr>
     <div class="row">
         {{#each doc.paths}}
-        <img class="col s12 m6 l3 materialboxed" src="/{{this}}">
+        <img class="col s12 m6 l4 materialboxed" id="galleryImages" src="/{{this}}">
         {{/each}}
     </div>
 </div>

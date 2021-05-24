@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return `
           <div class="col s12 m6 l3">
 				    <div class="card">
-              <div class="card-image waves-effect waves-block waves-light materialboxed">
+              <div class="card-image waves-effect waves-block waves-light hoverable">
                 <img class="activator" src="${image.paths[0]}">
               </div>
               <div class="card-content">
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span class="card-title grey-text text-darken-4">${image.title}<i class="material-icons right">close</i></span>
                 <p>${image.desc}</p>
                 <hr>
-                <a href="/gallery/${image._id}">Click for More</a>
+                <a href="/gallery/${image._id}">View Album</a>
               </div>
 				    </div>
 			    </div>

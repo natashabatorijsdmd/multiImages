@@ -68,15 +68,15 @@ app.post('/addAlbum', upload.array('images', 10), function (req, res, next) {
 })
 
 // Push new images to existing album
-app.post('/addPhoto:id', upload.array('images', 10), (req, res, next)=>{
+app.post('/addPhoto/:id', upload.array('images', 10), (req, res, next)=>{
     var id = req.params.id;
-    Task.findOne({_id: id }, (err, doc)=>{
+    Image.findOne({_id: id }, (err, doc)=>{
         if (err) throw err;
         req.files.forEach((image) => {
-            doc.imagePathsArray.push(image.path);
+            doc.paths.push(image.path);
         });
         doc.save();
-        res.redirect('/');
+        res.redirect(`/gallery/${id}`);
     })
 })
 
