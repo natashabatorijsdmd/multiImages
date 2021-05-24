@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row valign-wrapper">
+        <div class="col s6">
+            <h1 class="pink-text bold">PhotoKeep</h1>
+        </div>
+        <div class="col s6">
+            <a class="btn btn-large waves-effect waves-light blue right" href="/">
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h3>Add Images</h3>
+        <form action="/addPhoto" method="POST" enctype="multipart/form-data">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>IMG</span>
+                    <input type="file" multiple id="image" name="images" class="validate" required>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s10">
+       <h3>{{doc.title}}</h3>
+    </div>
+</div>
+    <div class="row">
+        <div class="col s10">
+            <p>{{doc.desc}}</p>
+        </div>
+         <div class="col s2">
+            <a class="btn-floating btn-large waves-effect waves-light blue right modal-trigger" href="#modal2">
+                <i class="material-icons">add</i></a>
+        </div>
+    </div>
+ 
+    <hr>
+    <div class="row">
+        {{#each doc.paths}}
+        <img class="col s12 m6 l3 materialboxed" src="/{{this}}">
+        {{/each}}
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
