@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.modal');
   var instances = M.Modal.init(elems);
 
-  var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
+  //Lightbox feature disabled
+  // var elems = document.querySelectorAll('.materialboxed');
+  //   var instances = M.Materialbox.init(elems);
 
   var url = '/getImages';
   var imageContainer = document.querySelector('#imageContainer');

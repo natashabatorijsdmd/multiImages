@@ -1,5 +1,4 @@
-var mongoose = require('mongoose');
-var schema = mongoose.Schema;
+
 
 var imageSchema = new schema({
     title: String,
