@@ -26,7 +26,7 @@ var upload = multer({ storage: storage });
 
 var Image = require('./models/Image.js');
 
-var port = 3000;
+var port = 3001;
 var dbURL = 'mongodb://localhost:27017/fileUploads';
 
 app.use(express.json());

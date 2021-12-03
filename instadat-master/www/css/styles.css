@@ -1,4 +1,8 @@
 
+.logo{
+    width: 250px;
+}
+
 
 .square{
     padding: 5px;
@@ -13,9 +17,10 @@
     display: flex;
 }
 
+html {background-color: #F4F2ED}
+
 #background{
     max-width: none;
-    background-color: #F4F2ED;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -26,6 +31,6 @@
     border-radius: 20px;
 }
 
-.logo{
+/* .logo{
     display: block;
-}
+} */

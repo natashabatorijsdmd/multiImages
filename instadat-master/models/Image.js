@@ -1,6 +1,7 @@
+const mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-
-var imageSchema = new schema({
+var imageSchema = new Schema({
     title: String,
     desc: String,
     paths: Array, //Using Array to store multiple paths for images

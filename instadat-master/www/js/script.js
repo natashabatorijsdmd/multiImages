@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   //   var instances = M.Materialbox.init(elems);
 
   var url = '/getImages';
+
   var imageContainer = document.querySelector('#imageContainer');
   fetch(url)
     .then(res => res.json())
