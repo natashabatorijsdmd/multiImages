@@ -55,18 +55,16 @@
     <hr>
     {{!-- DISPLAYS THE IMAGES WITHIN THE CURRENT ALBUM --}}
     <div class="row">
-    {{doc.date}}
     {{#each doc.paths}}
     <div class="col s6 m6 l3">
-            {{!-- <div class="row photoRow"> --}}
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="/{{this}}">
                 </div>
                 {{!-- THE REVEAL CARD WHEN IMAGE IS CLICKED--}}
                 <div class="card-reveal">
-                    <p>{{this}}</p>
-                    <span class=""><i class="material-icons right">close</i></span>
+                    <p>{{doc.date}}</p>
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
                     <p><a href="http://localhost:3001/{{this}}" download="{{this}}">Download</a></p>
                 </div>
             </div>

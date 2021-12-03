@@ -7,17 +7,9 @@
 .square{
     padding: 5px;
     margin: 10px;
-    /* max-height: 200px;
-    min-height: 199px;
-    max-width: 200px;
-    min-width: 199px; */
 }
 
-.photoRow{
-    display: flex;
-}
-
-html {background-color: #F4F2ED}
+html {background-color: #F5FBF6}
 
 #background{
     max-width: none;
@@ -30,7 +22,3 @@ html {background-color: #F4F2ED}
 .card{
     border-radius: 20px;
 }
-
-/* .logo{
-    display: block;
-} */
