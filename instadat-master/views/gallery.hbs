@@ -1,15 +1,23 @@
 <div class="container">
-    <div class="row valign-wrapper">
-        <div class="col s6">
-            <img class="logo" src="https://i.ibb.co/yWY3gWL/snapp-2.png">
-        </div>
-{{!-- RETURN TO DASHBOARD BUTTON --}}
-        <div class="col s6">
-            <a class="btn btn-large waves-effect waves-#619B81 right" href="/">
-                Back to Dashboard
+
+    {{!-- LOGO--}}
+    <div class="container valign-wrapper">
+         <div class="row"> 
+                <div class="col s12 valign-wrapper">
+                    <img class="logo" src="https://i.ibb.co/C5hmkFZ/snapp-2.png">
+                </div>
+         </div>
+    </div>
+
+    {{!-- RETURN TO DASHBOARD BUTTON --}}
+    <div class="row left-align">
+        <div class="col s12">
+            <a id="backButton" class="waves-effect waves-light btn-small yellow darken-4 left" href="/"><i class="material-icons left">arrow_back</i>All Albums</a>
             </a>
         </div>
-    </div>
+
+         </div>
+
 
  <!-- MODAL FOR ADDING A PHOTO TO A PRE-EXISTING ALBUM -->
 <div id="modal2" class="modal">
@@ -25,7 +33,7 @@
                     <input class="file-path validate" type="text">
                 </div>
             </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <button class="btn waves-effect waves-light yellow darken-4" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
             </button>
         </form>
@@ -47,7 +55,7 @@
 
 {{!-- ADD A PHOTO BUTTON --}}
          <div class="col s2">
-            <a class="btn-floating btn-large waves-effect waves-#619B81 right modal-trigger" href="#modal2">
+            <a class="btn-floating btn-large waves-effect waves yellow darken-4 right modal-trigger" href="#modal2">
                 <i class="material-icons">add</i></a>
         </div>
     </div>
@@ -65,7 +73,7 @@
                 <div class="card-reveal">
                     <p>{{doc.date}}</p>
                     <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                    <p><a href="http://localhost:3001/{{this}}" download="{{this}}">Download</a></p>
+                    <p><a href="http://localhost:3001/{{this}}" download="{{this}}">Download Image</a></p>
                 </div>
             </div>
     </div>
