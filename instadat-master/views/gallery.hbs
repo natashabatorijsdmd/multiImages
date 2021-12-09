@@ -25,7 +25,7 @@
         <h3>Add Images</h3>
         <form action="/addPhoto/{{doc._id}}" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field">
-                <div class="btn">
+                <div class="btn yellow darken-4">
                     <span>IMG</span>
                     <input type="file" multiple id="image" name="images" class="validate" required>
                 </div>
@@ -71,9 +71,8 @@
                 </div>
                 {{!-- THE REVEAL CARD WHEN IMAGE IS CLICKED--}}
                 <div class="card-reveal">
-                    <p>{{doc.date}}</p>
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                    <h6><a href="http://localhost:3001/{{this}}" download="{{this}}"><i class="material-icons left">file_download</i>Download Image</a></h6>
+                    <span class="card-title grey-text text-darken-4 small"><i class="material-icons right">close</i></span>
+                    <h6><a href="{{doc}}" download="{{this}}"><i class="material-icons left">file_download</i>Download Image</a></h6>
                 </div>
             </div>
     </div>

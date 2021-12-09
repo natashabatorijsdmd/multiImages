@@ -6,7 +6,8 @@ var path = require('path');
 // Handlebars is used to generate HTML on the server
 var handlebars = require('express-handlebars');
 
-//App Settings for Hanblebars Template engine. It tells handlebars were the files are kept that are used to create the HTML (The Views Folder)
+//App Settings for Hanblebars Template engine. 
+//It tells handlebars where the files are kept that are used to create the HTML (The Views Folder)
 app.set('view engine', 'hbs');
 app.engine('hbs', handlebars({
     layoutsDir: __dirname + '/views/layouts',
@@ -62,7 +63,7 @@ app.post('/addAlbum', upload.array('images', 10), function (req, res, next) {
         title,
         desc,
         paths: imagePathsArray
-    })
+        })
     imageUpload.save();
     res.redirect('/');
 })

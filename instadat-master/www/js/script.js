@@ -20,10 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img class="activator" src="${image.paths[0]}">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">${image.title}<i class="material-icons right">expand_less</i></span>
+                <span class="card-title activator grey-text text-darken-4">${image.title}
+                <i class="material-icons right">expand_less</i></span>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">${image.title}<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4">${image.title}
+                <i class="material-icons right">close</i></span>
                 <p>${image.desc}</p>
                 <hr>
                 <a href="/gallery/${image._id}">View Album</a>

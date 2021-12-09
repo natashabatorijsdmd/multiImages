@@ -2,17 +2,15 @@ a {
     color:#f57f17;
 }
 
+.card-image{
+    min-height: 100%;
+    max-height: 200px;
+}
 
 .logo{
     width: 100%;
     padding: none;
     margin-top: 40px;
-    margin-bottom: none;
-}
-
-.row {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: none;
 }
 
@@ -39,3 +37,9 @@ html {background-color: #F5FBF6}
 .card{
     border-radius: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .card-image{
+        max-height: 100px;
+    }
+  }
